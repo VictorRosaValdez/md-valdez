@@ -1,15 +1,16 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ProductPage } from './pages/product/product.page';
 
 const routes: Routes = [
 
   {
-    path: 'product',
+    path: '',
     pathMatch: 'full',
-    redirectTo: '/product'
-  }
-
+    redirectTo: 'product'
+    
+  },
+ 
 ];
 
 @NgModule({
