@@ -1,0 +1,41 @@
+.bottom-header {
+    margin-top: 1em;
+}
+
+.product-name {
+    margin-bottom: 0;
+    margin-left: 0.7em;
+}
+
+.product-info-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.3em;
+}
+
+.product-description,
+.project-picture,
+.project-chat {
+    margin-left: 1em;
+}
+
+.product-picture {
+    margin-bottom: 1em;
+}
+
+.product-chat {
+    border-left: 1px solid lightgrey;
+    padding-left: 1em;
+}
+
+
+.divider {
+    margin: auto;
+    left: 50%;
+    width: 98%;
+}
+
+.bottom-box {
+    display: flex;
+    justify-content: space-between;
+}
