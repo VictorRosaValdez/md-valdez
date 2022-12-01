@@ -1,0 +1,51 @@
+.bottom-header {
+    margin-top: 1em;
+}
+
+.project-title {
+    margin-bottom: 0;
+    margin-left: 0.7em;
+}
+
+.project-info-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.3em;
+}
+
+.project-info,
+.project-skills,
+.project-images,
+.project-progress,
+.project-chat {
+    margin-left: 1em;
+}
+
+.project-skills {
+    width: 13em;
+    margin-right: 1em;
+}
+
+.project-images {
+    margin-bottom: 1em;
+}
+
+.project-chat {
+    border-left: 1px solid lightgrey;
+    padding-left: 1em;
+}
+
+.skills-item {
+    margin: 0;
+}
+
+.divider {
+    margin: auto;
+    left: 50%;
+    width: 98%;
+}
+
+.bottom-box {
+    display: flex;
+    justify-content: space-between;
+}

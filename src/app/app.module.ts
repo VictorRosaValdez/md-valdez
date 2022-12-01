@@ -8,6 +8,7 @@ import { ProductComponent } from './components/product/product.component';
 import { OrderComponent } from './components/order/order.component';
 import { ProductPage } from './pages/product/product.page';
 import { OrderPage } from './pages/order/order.page';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { OrderPage } from './pages/order/order.page';
     OrderComponent,
     ProductPage,
     OrderPage,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
