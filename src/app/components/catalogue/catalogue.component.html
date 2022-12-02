@@ -1,0 +1,20 @@
+<ul class="product-list">
+    <li *ngFor="let product of products">
+      <div class="card" (click)="goToProduct(product.productId)">
+        <app-catalogue-product-header
+          [name]="product.name"
+          [category]="product.category"
+        ></app-catalogue-product-header>
+        <div class="project-info-container">
+          <div class="project-info">
+            <p>product:{{product.name}}</p>
+            <p>Industry: {{ product.category }}</p>
+            <p>Description: {{ product.description }}</p>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+
+  

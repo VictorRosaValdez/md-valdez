@@ -1,4 +1,9 @@
 .form-control:focus {
-    border-color: black;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08), 0 0 8px rgba(0, 0, 0, 0.7);
+    border-color: rgb(250, 238, 238);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.08), 0 0 8px rgba(255, 255, 255, 0.7);
   }
+
+.searchbar-size{
+  height: 5rem;
+  width: 100rem;
+}
