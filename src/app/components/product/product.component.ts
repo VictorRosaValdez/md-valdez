@@ -10,7 +10,7 @@ export class ProductComponent implements OnInit {
   selectedProduct: Product | undefined;
 
   constructor() { }
-
+  
   ngOnInit(): void {
     this.selectedProduct = JSON.parse(
       sessionStorage.getItem('product') || '{}'
