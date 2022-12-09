@@ -12,7 +12,6 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { SearchbarComponent } from './components/searchbar/searchbar.component';
 import { CatalogueComponent } from './components/catalogue/catalogue.component';
 import { CatalogueProductHeaderComponent } from './components/catalogue-product-header/catalogue-product-header.component';
-import { CatalogueProductHeaderclearComponent } from './components/catalogue-product-headerclear/catalogue-product-headerclear.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +24,7 @@ import { CatalogueProductHeaderclearComponent } from './components/catalogue-pro
     SearchbarComponent,
     CatalogueComponent,
     CatalogueProductHeaderComponent,
-    CatalogueProductHeaderclearComponent,
+  
   ],
   imports: [
     BrowserModule,

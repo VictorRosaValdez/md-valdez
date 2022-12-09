@@ -19,7 +19,7 @@ export class CatalogueComponent implements OnInit {
 
     
     goToProduct(productId: number){
-      this.router.navigate(['product', 1]);
+      this.router.navigate(['product', productId]);
     }
   
 

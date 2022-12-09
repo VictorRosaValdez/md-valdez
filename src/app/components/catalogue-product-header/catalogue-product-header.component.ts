@@ -11,7 +11,7 @@ export class CatalogueProductHeaderComponent implements OnInit {
   @Input() name: string | undefined;
   @Input() category: string | undefined;
   
-  icon: string | undefined;
+  img: string | undefined;
 
   currentProduct: Product | undefined;
 
@@ -25,15 +25,11 @@ export class CatalogueProductHeaderComponent implements OnInit {
   setProductIcon(){
     this.category = this.category?.toLowerCase();
     if (this.category === 'shoes') {
-      this.icon = 'globe';
+      this.img = 'shoes';
     } else if (this.category === 'coat') {
-      this.icon = 'music-note-beamed';
-    } else if (this.category === 'shirt') {
-      this.icon = 'camera-reels';
-    } else if (this.category === 'pants') {
-      this.icon = 'joystick';
+      this.img = 'coat';
     } else {
-      this.icon = 'jewelry';
+      this.img = 'jewelry';
     }
   }
 

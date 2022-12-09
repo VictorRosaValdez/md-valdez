@@ -8,13 +8,18 @@ const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'product'
+    redirectTo: 'catalogue'
     
   },
 
   {
     path:'catalogue',
     component: CatalogueComponent,
+  },
+
+  {
+    path:'product/:id',
+    component:ProductPage,
   }
  
 ];

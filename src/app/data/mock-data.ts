@@ -12,7 +12,7 @@ export let mockProducts: Product [] = [
   {
     productId: 1,
     name: "Best coat Ever",
-    category: "shoes",
+    category: "coat",
     description: "This is de best product ever ",
     orderCode: "12tm",
     stock:7,
@@ -21,8 +21,8 @@ export let mockProducts: Product [] = [
 
   {
     productId: 2,
-    name: "Best shoes Ever",
-    category: "shoes",
+    name: "Best jewelry Ever",
+    category: "jewelry",
     description: "This is de best product ever ",
     orderCode: "12tm",
     stock:7,
@@ -31,8 +31,8 @@ export let mockProducts: Product [] = [
 
   {
     productId: 3,
-    name: "Best T-Shirt Ever",
-    category: "T-Shirt",
+    name: "Best shoes Ever",
+    category: "shoes",
     description: "This is de best product ever ",
     orderCode: "12tm",
     stock:7,

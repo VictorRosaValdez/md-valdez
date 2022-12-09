@@ -18,6 +18,7 @@ a {
 
 .navbar-brand {
     margin-right: 2rem;
+    
 }
 
 .navbar-title {
@@ -31,4 +32,14 @@ a {
 .navbar-logo{
     float: center;
     margin-right: 1rem;
+}
+
+.navbar-login {
+    margin-right: 2rem;
+    background-color: darkgray;
+}
+
+.navbar-register {
+    margin-right: 2rem;
+    background-color: rgb(25, 108, 131);
 }
