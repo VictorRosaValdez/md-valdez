@@ -13,7 +13,7 @@ const url = environment.apiURLProducts
   styleUrls: ['./catalogue.component.scss']
 })
 export class CatalogueComponent implements OnInit {
-  //@Input() products: Product [] = [];
+  @Input() products: Product [] = [];
 
   _products: Product[] = [];
 

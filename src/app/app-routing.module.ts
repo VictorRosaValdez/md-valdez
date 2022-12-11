@@ -5,6 +5,7 @@ import { ProductPage } from './pages/product/product.page';
 import { HttpClientModule } from '@angular/common/http';
 import { AccountPage } from './pages/account/account.page';
 import { AuthGuard } from '@auth0/auth0-angular';
+import { SearchPage } from './pages/search/search.page';
 
 const routes: Routes = [
 
@@ -20,10 +21,15 @@ const routes: Routes = [
     component: CatalogueComponent,
   },
 
-  // {
-  //   path:'product/:id',
-  //   component:ProductPage,
-  // },
+  {
+    path:'product/:id',
+    component:ProductPage,
+  },
+
+  {
+    path: 'search/:searchInput',
+    component: SearchPage,
+  },
 
   {
     path: 'account',

@@ -17,6 +17,7 @@ import { AuthModule } from '@auth0/auth0-angular';
 import { AuthButtonComponent } from './components/auth-button-component/auth-button.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
 import { AccountPage } from './pages/account/account.page';
+import { SearchPage } from './pages/search/search.page';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +31,8 @@ import { AccountPage } from './pages/account/account.page';
     CatalogueProductHeaderComponent,
     AuthButtonComponent,
     UserProfileComponent,
-    AccountPage
+    AccountPage,
+    SearchPage
   
   ],
   imports: [

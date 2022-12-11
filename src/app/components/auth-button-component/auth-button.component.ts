@@ -6,13 +6,13 @@ import { DOCUMENT } from '@angular/common';
   selector: 'app-auth-button',
   template: `
     <ng-container *ngIf="auth.isAuthenticated$ | async; else loggedOut">
-      <button (click)="auth.logout({ returnTo: document.location.origin })">
+      <button class="btn btn-danger btn-block btn-sm" (click)="auth.logout({ returnTo: document.location.origin })">
         Uitloggen
       </button>
     </ng-container>
 
     <ng-template #loggedOut>
-      <button (click)="auth.loginWithRedirect()">Inloggen</button>
+      <button class="btn btn-primary btn-block btn-sm" (click)="auth.loginWithRedirect()">Inloggen</button>
     </ng-template>
   `,
   styles: [],
