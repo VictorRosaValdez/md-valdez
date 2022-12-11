@@ -1,5 +1,5 @@
 <ul class="product-list">
-    <li *ngFor="let product of products">
+    <li *ngFor="let product of _products">
       <div class="card" (click)="goToProduct(product.productId)">
         <app-catalogue-product-header
           [name]="product.name"

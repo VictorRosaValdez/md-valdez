@@ -12,6 +12,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { SearchbarComponent } from './components/searchbar/searchbar.component';
 import { CatalogueComponent } from './components/catalogue/catalogue.component';
 import { CatalogueProductHeaderComponent } from './components/catalogue-product-header/catalogue-product-header.component';
+import { LoginPage } from './pages/login/login.page';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { CatalogueProductHeaderComponent } from './components/catalogue-product-
     SearchbarComponent,
     CatalogueComponent,
     CatalogueProductHeaderComponent,
+    LoginPage,
   
   ],
   imports: [

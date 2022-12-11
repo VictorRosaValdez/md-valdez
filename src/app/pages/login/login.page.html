@@ -1,0 +1,47 @@
+<div class="container">
+    <h1>Inloggen</h1>
+    
+    <form #startForm="ngForm" (ngSubmit)="onLoginSubmit(startForm)">
+
+        <fieldset class="mb-5">
+            <label for="username">Gebruikersnaam</label>
+            <input 
+            id="username"
+            name="username"
+            required
+            minlength="3"
+            ngModel
+            #username="ngModel"
+            type="text" 
+            class="form-control" 
+            placeholder="Vul je gebruikersnaam">
+            <label for="password">Wachtwoord</label>
+            <!-- <input
+            id="password"
+            name="password"
+            required
+            minlength="10"
+            ngModel
+            #password="ngModel"
+            type="text" 
+            class="form-control" 
+            placeholder="Vul je wachtwoord"> -->
+        </fieldset>
+
+        <div *ngIf="username.errors && (username.dirty || username.touched)" class="alert alert-danger">
+            <p *ngIf="username.errors['required']">Dit is een verplicht veld</p>
+            <p *ngIf="username.errors['minlength']">De gerbuikersnaam is te kort</p>
+        </div>
+
+        <button 
+        [disabled]="startForm.invalid"
+        type="submit" class="btn btn-primary">Inloggen</button>&nbsp;
+        <button  
+        [disabled]="startForm.invalid"
+        (click)="onSignUpClick(startForm)" class="btn btn-secondary" >Registreren</button>
+
+    </form>
+        <div class="alert alert-danger" *ngIf="error !== ''">
+            <p>{{error}}</p>
+        </div>
+</div>

@@ -13,14 +13,15 @@ const {apiURL} = environment
 export class LoginService {
 
   constructor(private http: HttpClient) { }
-  public login(accoutname: string): Observable<Account | undefined>{
+  public login(username: string): Observable<Account | undefined>{
 
     // HttpClient = Observable
-    return this.http.get<Account[]>(apiURL + "?accountname=" + accoutname)
+    return this.http.get<Account[]>(apiURL + "/1/" + username)
     
     //Return an object or an undefined
     .pipe(
       map((response: Account[]) => response.pop())
     )
   }
+
 }

@@ -11,8 +11,11 @@
       <div class="right-container">
         <a class="navbar-brand" href="#">Producten</a>
         <a class="navbar-brand" href="#">Account</a>
-        <button class="navbar-login">Inloggen</button>
-        <button class="navbar-register">Registreren</button>
+        <button
+        (click)="onLoginClick()"
+        class="navbar-login">Inloggen</button>
+        <button class="navbar-register"
+        (click)="onSignUpClick()">Registreren</button>
       </div>
     </div>
     
