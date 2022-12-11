@@ -13,7 +13,10 @@ import { SearchbarComponent } from './components/searchbar/searchbar.component';
 import { CatalogueComponent } from './components/catalogue/catalogue.component';
 import { CatalogueProductHeaderComponent } from './components/catalogue-product-header/catalogue-product-header.component';
 import { LoginPage } from './pages/login/login.page';
-
+import { AuthModule } from '@auth0/auth0-angular';
+import { domain } from 'process';
+import { AuthButtonComponent } from './components/auth-button-component/auth-button.component';
+import { UserProfileComponent } from './components/user-profile/user-profile.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,14 +29,19 @@ import { LoginPage } from './pages/login/login.page';
     CatalogueComponent,
     CatalogueProductHeaderComponent,
     LoginPage,
+    AuthButtonComponent,
+    UserProfileComponent
   
   ],
   imports: [
     BrowserModule,
+    AuthModule.forRoot({
+      domain: 'mdvaldez.eu.auth0.com',
+      clientId: 'qlN2gd3vLiMYRT38VlIZkSeSaGWfM6V4'
+    }),
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    
   ],
   providers: [],
   bootstrap: [AppComponent]

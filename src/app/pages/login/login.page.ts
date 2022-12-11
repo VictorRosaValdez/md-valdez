@@ -39,6 +39,7 @@ export class LoginPage implements OnInit {
     const { username } = form.value;
     //const { password } = form.value;
 
+    this.router.navigateByUrl("catalogue")
     this.loginService.login(username).subscribe({
 
       
@@ -52,7 +53,6 @@ export class LoginPage implements OnInit {
         // Store the user and redirect to catalogue page
         else{
           this.userService.user = user;
-          this.router.navigateByUrl("catalogue")
         }
       },
       error: () => {
