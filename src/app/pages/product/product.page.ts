@@ -12,6 +12,7 @@ import { DisplayProductCatalogueService } from 'src/app/services/display-product
 })
 export class ProductPage implements OnInit {
 
+  selectedProduct: Product | undefined;
   // All products
   get products(): Product[] {
     return this.displayProduct.products;
@@ -29,6 +30,7 @@ export class ProductPage implements OnInit {
       return element.productId === Number(productId);
     })
     sessionStorage.setItem('product', JSON.stringify(foundProduct))
+    this.selectedProduct = foundProduct
   }
 
 
