@@ -1,9 +1,10 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CatalogueComponent } from './components/catalogue/catalogue.component';
-import { LoginPage } from './pages/login/login.page';
 import { ProductPage } from './pages/product/product.page';
 import { HttpClientModule } from '@angular/common/http';
+import { AccountPage } from './pages/account/account.page';
+import { AuthGuard } from '@auth0/auth0-angular';
 
 const routes: Routes = [
 
@@ -25,8 +26,9 @@ const routes: Routes = [
   // },
 
   {
-    path: 'login',
-    component: LoginPage
+    path: 'account',
+    component: AccountPage,
+    canActivate: [AuthGuard],
   }
  
 ];

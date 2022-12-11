@@ -1,24 +1,15 @@
 <nav class="navbar sticky-top">
     <div class="container-fluid">
       <div class="left-container">
-        <!-- Robot icon created by Zulfa Mahendra - Flaticon https://www.flaticon.com/free-icons/robot -->
+        
         <img src="/assets/icon/logo.png" alt="logo" class="navbar-logo" />
-      </div>
-
-      
+      </div> 
       <app-searchbar></app-searchbar>
-      <app-user-profile></app-user-profile>
       <div class="right-container">
         <a class="navbar-brand" href="#">Producten</a>
-        <a class="navbar-brand" href="#">Account</a>
-        <app-auth-button></app-auth-button>
-        <button
-        (click)="onLoginClick()"
-        class="navbar-login">Inloggen</button>
-        <button class="navbar-register"
-        (click)="onSignUpClick()">Registreren</button>
+        <a class="navbar-brand" href="http://localhost:4200/account">Account</a>
+        <app-auth-button></app-auth-button>     
       </div>
     </div>
-    
-  </nav>
+</nav>
   

@@ -12,11 +12,11 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { SearchbarComponent } from './components/searchbar/searchbar.component';
 import { CatalogueComponent } from './components/catalogue/catalogue.component';
 import { CatalogueProductHeaderComponent } from './components/catalogue-product-header/catalogue-product-header.component';
-import { LoginPage } from './pages/login/login.page';
 import { AuthModule } from '@auth0/auth0-angular';
-import { domain } from 'process';
+
 import { AuthButtonComponent } from './components/auth-button-component/auth-button.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
+import { AccountPage } from './pages/account/account.page';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,9 +28,9 @@ import { UserProfileComponent } from './components/user-profile/user-profile.com
     SearchbarComponent,
     CatalogueComponent,
     CatalogueProductHeaderComponent,
-    LoginPage,
     AuthButtonComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    AccountPage
   
   ],
   imports: [

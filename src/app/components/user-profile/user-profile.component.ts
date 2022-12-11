@@ -5,8 +5,8 @@ import { AuthService } from '@auth0/auth0-angular';
   selector: 'app-user-profile',
   template: `
     <ul *ngIf="auth.user$ | async as user">
-      <li>{{ user.name }}</li>
-      <li>{{ user.email }}</li>
+      <li><h5>Gebruikersnaam:</h5>{{ user.name }}</li>
+      <li><h5>Email:</h5>{{ user.email }}</li>
     </ul>`
 })
 export class UserProfileComponent implements OnInit {
